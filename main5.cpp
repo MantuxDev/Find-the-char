@@ -113,7 +113,6 @@ void carica(char v[]){
 void trova(char v[]){
 
     char cerca;
-    bool x=false;
     int z=0;
 
     cout<<"-----Trova carattere-----"<<endl;
@@ -125,11 +124,10 @@ void trova(char v[]){
     for(int i=0; i<e;i++){
         if(v[i]==cerca){
             z++;
-            x=true;
         }
     }
 
-    if(x==true){
+    if(z>0){
         cout<<"Il carattere '"<<cerca<<"' e' presente "<<z<<" volte"<<endl;
     }
     else{
